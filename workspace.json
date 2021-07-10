@@ -12,16 +12,12 @@
       "targets": {
         "build": {
           "executor": "@nrwl/node:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": [
-              "apps/api/src/assets"
-            ]
+            "assets": ["apps/api/src/assets"]
           },
           "configurations": {
             "production": {
@@ -46,16 +42,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/api/**/*.ts"
-            ]
+            "lintFilePatterns": ["apps/api/**/*.ts"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/api"
-          ],
+          "outputs": ["coverage/apps/api"],
           "options": {
             "jestConfig": "apps/api/jest.config.js",
             "passWithNoTests": true
@@ -63,26 +55,22 @@
         }
       }
     },
-    "features-backend-authorization": {
-      "root": "libs/features/backend/authorization",
-      "sourceRoot": "libs/features/backend/authorization/src",
+    "features-backend-authz": {
+      "root": "libs/features/backend/authz",
+      "sourceRoot": "libs/features/backend/authz/src",
       "projectType": "library",
       "targets": {
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/features/backend/authorization/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/features/backend/authz/**/*.ts"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/features/backend/authorization"
-          ],
+          "outputs": ["coverage/libs/features/backend/authz"],
           "options": {
-            "jestConfig": "libs/features/backend/authorization/jest.config.js",
+            "jestConfig": "libs/features/backend/authz/jest.config.js",
             "passWithNoTests": true
           }
         }
@@ -96,16 +84,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/features/backend/chat/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/features/backend/chat/**/*.ts"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/features/backend/chat"
-          ],
+          "outputs": ["coverage/libs/features/backend/chat"],
           "options": {
             "jestConfig": "libs/features/backend/chat/jest.config.js",
             "passWithNoTests": true
@@ -121,16 +105,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/features/backend/lobby/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/features/backend/lobby/**/*.ts"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/features/backend/lobby"
-          ],
+          "outputs": ["coverage/libs/features/backend/lobby"],
           "options": {
             "jestConfig": "libs/features/backend/lobby/jest.config.js",
             "passWithNoTests": true
@@ -146,16 +126,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/features/backend/user/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/features/backend/user/**/*.ts"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/features/backend/user"
-          ],
+          "outputs": ["coverage/libs/features/backend/user"],
           "options": {
             "jestConfig": "libs/features/backend/user/jest.config.js",
             "passWithNoTests": true
@@ -186,9 +162,7 @@
         },
         "bundle-ios": {
           "executor": "@nrwl/react-native:bundle",
-          "outputs": [
-            "apps/mobile/build"
-          ],
+          "outputs": ["apps/mobile/build"],
           "options": {
             "entryFile": "apps/mobile/src/main.tsx",
             "platform": "ios",
@@ -222,16 +196,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/mobile/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/mobile/**/*.{ts,tsx,js,jsx}"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/mobile"
-          ],
+          "outputs": ["coverage/apps/mobile"],
           "options": {
             "jestConfig": "apps/mobile/jest.config.js",
             "passWithNoTests": true
@@ -247,16 +217,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/types/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/types/**/*.ts"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/types"
-          ],
+          "outputs": ["coverage/libs/types"],
           "options": {
             "jestConfig": "libs/types/jest.config.js",
             "passWithNoTests": true

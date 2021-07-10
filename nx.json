@@ -25,7 +25,7 @@
     "api": {
       "tags": []
     },
-    "features-backend-authorization": {
+    "features-backend-authz": {
       "tags": []
     },
     "features-backend-chat": {
