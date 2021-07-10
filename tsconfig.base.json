@@ -15,6 +15,18 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nautilus/features/backend/authorization": [
+        "libs/features/backend/authorization/src/index.ts"
+      ],
+      "@nautilus/features/backend/chat": [
+        "libs/features/backend/chat/src/index.ts"
+      ],
+      "@nautilus/features/backend/lobby": [
+        "libs/features/backend/lobby/src/index.ts"
+      ],
+      "@nautilus/features/backend/user": [
+        "libs/features/backend/user/src/index.ts"
+      ],
       "@nautilus/types": ["libs/types/src/index.ts"]
     }
   },

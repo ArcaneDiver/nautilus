@@ -6,7 +6,6 @@
     },
     ".eslintrc.json": "*"
   },
-
   "affected": {
     "defaultBase": "master"
   },
@@ -24,6 +23,18 @@
   },
   "projects": {
     "api": {
+      "tags": []
+    },
+    "features-backend-authorization": {
+      "tags": []
+    },
+    "features-backend-chat": {
+      "tags": []
+    },
+    "features-backend-lobby": {
+      "tags": []
+    },
+    "features-backend-user": {
       "tags": []
     },
     "mobile": {
