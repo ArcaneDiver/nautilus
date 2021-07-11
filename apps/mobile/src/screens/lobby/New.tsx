@@ -2,28 +2,24 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Button } from 'react-native-elements';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { LobbyStackParamList } from '../../navigation/LobbyStackNavigation';
 
 type Props = {
   navigation: StackNavigationProp<LobbyStackParamList, 'New'>;
 };
+
 const New: React.FC<Props> = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <Button containerStyle={styles.button} type="solid" title="New Lobby" />
       <Button
         containerStyle={styles.button}
-        onPress={() => {}}
-        type="solid"
-        title="New Lobby"
-      />
-      <Button
-        containerStyle={styles.button}
-        onPress={() => {}}
         type="outline"
         title="Join Lobby"
       />
-    </View>
+    </SafeAreaView>
   );
 };
 

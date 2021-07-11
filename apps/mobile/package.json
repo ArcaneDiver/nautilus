@@ -13,6 +13,10 @@
     "@react-navigation/native": "*",
     "@react-navigation/stack": "*",
     "react-native-maps": "*",
-    "react-native-screens": "*"
+    "react-native-screens": "*",
+    "react-native-auth0": "*",
+    "react-native-toast-message": "*",
+    "@react-native-async-storage/async-storage": "*",
+    "jwt-decode": "*"
   }
 }

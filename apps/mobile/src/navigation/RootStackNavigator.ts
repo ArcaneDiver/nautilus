@@ -6,6 +6,7 @@ import { LobbyStackParamList } from './LobbyStackNavigation';
 export type RootStackParamList = {
   Lobby: NavigatorScreenParams<LobbyStackParamList>;
   Map: undefined;
+  Auth: undefined;
 };
 
 export const RootStack = createStackNavigator<RootStackParamList>();
