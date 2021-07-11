@@ -24,7 +24,7 @@
       "@nautilus/features/backend/lobby": [
         "libs/features/backend/lobby/src/index.ts"
       ],
-      "@nautilus/types": ["libs/types/src/index.ts"]
+      "@nautilus/shared/types": ["libs/shared/types/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

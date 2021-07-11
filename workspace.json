@@ -188,22 +188,22 @@
         }
       }
     },
-    "types": {
-      "root": "libs/types",
-      "sourceRoot": "libs/types/src",
+    "shared-types": {
+      "root": "libs/shared/types",
+      "sourceRoot": "libs/shared/types/src",
       "projectType": "library",
       "targets": {
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["libs/types/**/*.ts"]
+            "lintFilePatterns": ["libs/shared/types/**/*.ts"]
           }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/types"],
+          "outputs": ["coverage/libs/shared/types"],
           "options": {
-            "jestConfig": "libs/types/jest.config.js",
+            "jestConfig": "libs/shared/types/jest.config.js",
             "passWithNoTests": true
           }
         }

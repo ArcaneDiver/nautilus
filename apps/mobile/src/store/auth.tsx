@@ -4,7 +4,7 @@ import Toast from 'react-native-toast-message';
 
 import { LocalStorage } from '../services/storage';
 import { auth0Client } from '../utils/auth0';
-import { User } from '@nautilus/types';
+import { User } from '@nautilus/shared/types';
 
 const KEY_ACCESS_TOKEN = '@auth/accessToken';
 const KEY_REFRESH_TOKEN = '@auth/refreshToken';

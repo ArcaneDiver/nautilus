@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, ScrollView } from 'react-native';
 import { Avatar } from 'react-native-elements';
 
-import { Wanted } from '@nautilus/types';
+import { Wanted } from '@nautilus/shared/types';
 import { getIconUrlFromName } from '../api/avatar';
 
 type Props = {
