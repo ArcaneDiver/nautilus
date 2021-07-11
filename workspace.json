@@ -118,27 +118,6 @@
         }
       }
     },
-    "features-backend-user": {
-      "root": "libs/features/backend/user",
-      "sourceRoot": "libs/features/backend/user/src",
-      "projectType": "library",
-      "targets": {
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/features/backend/user/**/*.ts"]
-          }
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/features/backend/user"],
-          "options": {
-            "jestConfig": "libs/features/backend/user/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
     "mobile": {
       "root": "apps/mobile",
       "sourceRoot": "apps/mobile/src",

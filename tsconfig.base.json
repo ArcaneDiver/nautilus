@@ -24,9 +24,6 @@
       "@nautilus/features/backend/lobby": [
         "libs/features/backend/lobby/src/index.ts"
       ],
-      "@nautilus/features/backend/user": [
-        "libs/features/backend/user/src/index.ts"
-      ],
       "@nautilus/types": ["libs/types/src/index.ts"]
     }
   },
